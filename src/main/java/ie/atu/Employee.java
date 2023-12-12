@@ -4,18 +4,20 @@ public class Employee {
     String name;
     String idNumber;
 
-    public Employee() {
+    public Employee(){
+        this.name = "David";
+        this.idNumber= "G004";
+    }
+    public Employee(String name,String idNumber) {
+        this.name = name;
+        this.idNumber =idNumber ;
     }
 
-    public Employee(String name, String idNumber) {
-        this.name = name;
-        this.idNumber = idNumber;
-    }
 
     public String getName() {
         return name;
     }
-    public void setName(String name) {
+    public void setName() {
         this.name = name;
     }
 
@@ -23,12 +25,12 @@ public class Employee {
         return idNumber;
     }
 
-    public void setIdNumber(String idNumber) {
+    public void setIdNumber() {
         this.idNumber = idNumber;
     }
 
     public void getReportDetails(){
-        System.out.print("Name: "+getName());
-        System.out.print("ID Number: "+getIdNumber());
+        System.out.println("Name: "+getName());
+        System.out.println("ID Number: "+getIdNumber());
     }
 }
