@@ -9,6 +9,7 @@ public class EmployeeApp {
         user.setIdNumber();
         user.getReportDetails();
 
+
         ShiftWorker user_2 = new ShiftWorker();
         user.setName();
         user_2.setPayrollNum();
@@ -16,6 +17,10 @@ public class EmployeeApp {
         user_2.setHourRate();
         user_2.getReportDetails();
 
-
+        ShiftWorker user_3 = new ShiftSupervisor();
+        user.setName();
+        user_3.setPayrollNum();
+        user_3.setShift();
+        user_3.getReportDetails();
     }
 }
